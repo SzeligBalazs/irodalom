@@ -117,4 +117,8 @@ span {
     #form {
         display: none;
     }
+
+    body {
+        overflow: hidden;
+    }
 }
