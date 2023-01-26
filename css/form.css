@@ -113,4 +113,8 @@ span {
         position: absolute;
         z-index: 100;   
     }
+
+    #form {
+        display: none;
+    }
 }
