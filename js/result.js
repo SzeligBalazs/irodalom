@@ -24,19 +24,19 @@ function checkSins() {
             } else {
                 result.style.display = 'block';
                 row[0].style.display = "none";
-                title.innerText = `A meghozott ítélet:\n${lastname.value} ${firstName.value} nem bűnös.\n\n A Paradicsom kapuja megnyílik...`;
+                title.innerText = `A meghozott ítélet:\n${firstName.value} ${lastname.value} nem bűnös.\n\n A Paradicsom kapuja megnyílik...`;
             }
             //  break;
         
         }
         if(sinsCount >= 3) {
-            title.innerText = `A meghozott ítélet:\n${lastname.value} ${firstName.value} bűnös.\n\n A Pokol kapuja megnyílik...`;
+            title.innerText = `A meghozott ítélet:\n${firstName.value} ${lastname.value} bűnös.\n\n A Pokol kapuja megnyílik...`;
         } else if(sinsCount == 0) {
             result.style.display = 'block';
             row[0].style.display = "none";
-            title.innerText = `A meghozott ítélet:\n${lastname.value} ${firstName.value} nem bűnös.\n\n A Paradicsom kapuja megnyílik...`;
-        }else {
-            title.innerText = `A meghozott ítélet:\n${lastname.value} ${firstName.value} bűnös.\n\n A Purgatórium tűzében megtisztulhat!`;
+            title.innerText = `A meghozott ítélet:\n${firstName.value} ${lastname.value} nem bűnös.\n\n A Paradicsom kapuja megnyílik...`;
+        } else {
+            title.innerText = `A meghozott ítélet:\n${firstName.value} ${lastname.value} bűnös.\n\n A Purgatórium tűzében megtisztulhat!`;
         }
     }
 }
