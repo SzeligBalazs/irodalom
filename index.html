@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Hova kerülne?</title>
+</head>
+<body>
+    <div id="form">
+        <h1 id="title" class="font-change">Hova kerülne?</h1>
+        <br>
+        <br>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h4>A csillaggal (<span>*</span>) jelölt mezők teljesítése <u>kötelező</u>!</h4>
+                    <div class="item">
+                        <label for="firstname"><span>*</span> Vezetéknév</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="item">
+                        <label for="lastname"><span>*</span> Keresztnév</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="item">
+                        <label for="sin"><span>*</span> Sorolja fel a legnagyobb tetteit élete során. <u>Pl. (+) adományozás, (-) emberölés</u></label>
+                        <br>
+                        <textarea name="sin" id="sin" cols="80" rows="8" required></textarea>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="checkbox1" required>
+                        <label for="checkbox1"><span>*</span> Elfogadom, hogy a beírt adatok az elbirálás után megsemmisítésre kerülnek és nem maradnak fenn semmilyen formában.</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="checkbox2" required>
+                        <label for="checkbox2"><span>*</span> Elfogadom, hogy az elbírált eredmény ellen fellebbezni <u>nem</u> lehet.</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Feliratkozom a hírlevélre.</label>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <button id="submit" onclick="checkSins()">Elküldés</button>
+                        </center>
+                     </div>
+                    <div class="res-item">
+                        <h1 id="result"></h1>
+                    </div>
+                     
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/result.js"></script>
+</body>
+</html>

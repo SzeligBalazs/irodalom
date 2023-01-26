@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@font-face {
+    font-family: middle-age;
+    src: url(../assets/fonts/Canterbury.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 224, 167);
+    font: 14px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.font-change {
+    font-family: middle-age;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#form {
+    max-width: 100%;
+    background: url('../assets/images/bg.png') center center no-repeat fixed;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form input {
+    border: 1px dashed #000;
+    background: transparent;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+}
+
+
+
+#form textarea {
+    border: 1px dashed #000;
+    background: none;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    resize: none;
+}
+
+#form input:active {
+    border: 1px solid #000;
+    background: none;
+    outline: none;
+    
+}
+
+#form #submit {
+    background: #000;
+    color: #fff;
+    border: 0;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.rescol {
+    display: hidden;
+}
+
+h1 {
+    text-align: center;
+    font: 1em sans-serif center;
+}
+
+span {
+    color: red;
+}
