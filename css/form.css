@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .font-change {
@@ -35,11 +35,14 @@ h1 {
 }
 
 #form {
-    max-width: 100%;
+    width: 100%;
+    padding: 10%;
     background: url('../assets/images/bg.png') center center no-repeat fixed;
-    padding: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75);
 }
 
 #form input {
